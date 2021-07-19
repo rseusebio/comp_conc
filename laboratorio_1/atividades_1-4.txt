@@ -1,0 +1,23 @@
+[Atividade 1]
+Ha mudanças na ordem de execução das threads? Por que isso ocorre?
+Sim. Há mundaças na ordem de execução da thread pois elas executam concorrentemente e disputam 
+o tempo de processamento da CPU.
+
+[Atividade 2]
+Qual foi a diferença em relação ao programa anterior?
+A diferença foi que no programa "hello.c" não foi passado nenhum argumento para as threads.
+Já no programa "hello_arg.c" cada thread recebeu um ponteiro de inteiro que apontava para um 
+elemento de uma lista.
+
+
+[Atividade 3]
+O programa funcionou como esperado?
+Sim. A modificação feita foi a criação de um struct para comportar mais de um atributo e passá-lo
+para a thread. Dessa forma, cada struct foi inicializado com um malloc, referenciando a um endereço 
+de memória distindo, e inicializado com o id da thread e o número de threads.
+
+[Atividade 4]
+O que aconteceu de diferente em relação ás versoes/execuçoes anteriores?
+Neste programa a thread main espera todas as outras threads terminarem antes de fazer uma impressão
+na tela e terminar a sua atividade.
+    
