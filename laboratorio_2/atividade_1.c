@@ -36,7 +36,6 @@ void * task(void * arg)
 {
     t_args * args = (t_args *) arg;
 
-
     matrix_multiplication(args->dimension, args->t_id, n_threads);
 
     pthread_exit(NULL);
